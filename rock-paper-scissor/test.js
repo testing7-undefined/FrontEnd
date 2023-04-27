@@ -68,7 +68,7 @@ function computer(user,comp){
     console.log('The winner is :'+(result));
     console.log(`Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
     */
-    let rr=`You : <img src="${user}.png"> <img src="${comp}.png"> : Computer`;
+    let rr=`You : <img src="${user}.png" class="lkl"> <img src="${comp}.png" class="lkl"> : Computer`;
     let rwil=`<h3>Winner : ${result}</h3>`,ore=`Wins: ${score.wins} &nbsp Loses: ${score.loses} &nbsp Ties: ${score.tie}`;
     document.querySelector('.hell').innerHTML=rr;
     document.querySelector('.wil').innerHTML=rwil;
