@@ -14,7 +14,7 @@ function computer(user,comp){
         tie:0
     };
     let x=Math.random();
-    console.log('user selected is: '+ user);
+    //console.log('user selected is: '+ user);
 
     if(x<=1/3){
         if(user==='scissor') {
@@ -62,10 +62,12 @@ function computer(user,comp){
       comp='scissor';//result='You';
     }
     localStorage.setItem('score',JSON.stringify(score));
-    //console.log('user selected is: '+ user);
+    /*
+    console.log('user selected is: '+ user);
     console.log('computer selected is: '+comp);
     console.log('The winner is :'+(result));
     console.log(`Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
+    */
     let rr=`You : <img src="${user}.png"> <img src="${comp}.png"> : Computer`;
     let rwil=`<h3>Winner : ${result}</h3>`,ore=`Wins: ${score.wins} &nbsp Loses: ${score.loses} &nbsp Ties: ${score.tie}`;
     document.querySelector('.hell').innerHTML=rr;
@@ -74,12 +76,12 @@ function computer(user,comp){
   }
 function reset(){
   score.wins=0,score.loses=0,score.tie=0;
- // let iv=(`\nWins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
+  // let iv=(`\nWins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
   //document.querySelector('.jj').innerHTML=iv;
   //score.wins=0,score.loses=0,score.tie=0;
   localStorage.setItem('score',JSON.stringify(score));
   let rr=`Wins: ${score.wins} &nbsp Loses: ${score.loses} &nbsp Ties: ${score.tie}`;
   document.querySelector('.hell').innerHTML='';
   document.querySelector('.result').innerHTML=rr;
-  console.log(`Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
+  //console.log(`Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
   }
