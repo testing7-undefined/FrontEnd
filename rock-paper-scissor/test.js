@@ -82,6 +82,7 @@ function reset(){
   localStorage.setItem('score',JSON.stringify(score));
   let rr=`Wins: ${score.wins} &nbsp Loses: ${score.loses} &nbsp Ties: ${score.tie}`;
   document.querySelector('.hell').innerHTML='';
+  document.querySelector('.wil').innerHTML='';
   document.querySelector('.result').innerHTML=rr;
   //console.log(`Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.tie}`);
   }
