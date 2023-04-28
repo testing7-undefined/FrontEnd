@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Todo
+    </title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="tata">
+    <div class="gride">
+      <div class="todoHeading">
+        <p class="heading">Todo List</p><p class="note">Note : For better appereance limit todo name for max 17 cahracters , empty date leads to current date</p>
+      </div>
+      <br>
+      <div class="inptodo">
+        <input onkeydown="entere(event.key);" class="inputTodo" placeholder="Todo Name">
+      </div>
+      <div class="inpdate">  
+        <input type="date" class="date"/>
+      </div>
+      <div class="inpadd">  
+        <button onclick=" add();" class="ipaa">
+          Add
+        </button>
+        <button class="ipaa" onclick="reset();">
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+    <div class="gridTodo">
+    </div>
+  
+    <script src="todo.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+body{
+  color:white;
+  background-color: black;
+  
+}
+button{
+  cursor: pointer;
+  height: 34px;
+  width: 70px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius:5px;
+}
+.deleteTodo{
+  background-color: rgba(236, 89, 59, 0.873);
+}
+.ipaa{
+  background-color: #33b249;
+  margin-left: 15px;
+}
+.inptodo{
+  grid-area: inptodo;
+}
+.inpdate{
+  grid-area: inpdate;
+}
+.inpadd{
+  grid-area: inpadd;
+}
+.todoHeading{
+  grid-area: todoHeading;
+  font-weight: bold;
+  font-size: larger;
+  
+}
+.gride, .gridTodo{
+  text-align: center;
+  display: grid;
+  grid-template-areas: ' todoHeading todoHeading todoHeading'
+  'inptodo inpdate inpadd'
+  ;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+}
+.gridTodo{
+  display: grid;
+}
+.data,.daete{
+ max-width: 200px;
+ overflow:auto;
+ bottom: 70%;
+}
+input{
+  border-radius: 5px;
+  height:30px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tata,.gridTodo{
+  margin-top: 11px ;
+  margin-left: 30%;
+  margin-right: 50%;
+}
+.edit , .deleteTodo{
+  margin-left: 15px;
+}
+.edit{
+  background-color: rgba(58, 134, 241, 0.949);
+}
+.no{
+  position: relative;
+  left:0px;
+  bottom: 0px;
+}
+.note{
+  font-size:small;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
