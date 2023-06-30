@@ -1,0 +1,73 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  font-family: fantasy;
+  font-size: large;
+  display: inline-block;
+}
+.oo{
+  box-shadow: 0 0 5px rgb(42, 39, 39);
+  border-radius: 8px;
+  min-width: 280px;
+  overflow: hidden;
+}
+.aa{
+  display: flex;
+}
+button{
+  border:none;
+  height: 40px;
+  flex: 1;
+  width: 100%;
+  background-color: rgb(150, 185, 241);
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: 600;
+}
+button:hover{
+  background-color: rgb(77, 123, 239);
+}
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gg{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight: 600;
+}
+.hed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hed p{
+  font-size: larger;
+  font-weight: 600;
+  color:rgba(91, 89, 89, 0.858);
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+.mm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.c , .correct{
+  color: green;
+}
+.inc , .incorrect{
+  color: red;
+}
+.nas{
+  color: rgb(30, 51, 153);
+}
